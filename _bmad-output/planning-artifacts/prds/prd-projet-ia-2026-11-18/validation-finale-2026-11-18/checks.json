@@ -1,0 +1,186 @@
+{
+  "checkedAt": "2026-11-18T22:17:25.187Z",
+  "scope": "Documentary validation only; no application tests performed",
+  "hashes": {
+    "prd.md": "5b9f76de7bc60f01dcc17048ed91a546fa302f21e324e74b4e7ca321874d5514",
+    "addendum.md": "bc20c4f877ed6cc69ebeb105442b727e77d5fd6e0d4401d529a58bace1fcf7a6",
+    "source-besoin.md": "1d75ff3c94cecf14ef7c37979d39dd0927573ab315773d35e968eeb5651c63fa"
+  },
+  "functionalRequirements": [
+    {
+      "id": "FR-1",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 7
+    },
+    {
+      "id": "FR-2",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 6
+    },
+    {
+      "id": "FR-3",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 10
+    },
+    {
+      "id": "FR-4",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 4
+    },
+    {
+      "id": "FR-5",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 3
+    },
+    {
+      "id": "FR-6",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 4
+    },
+    {
+      "id": "FR-7",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 5
+    },
+    {
+      "id": "FR-8",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 6
+    },
+    {
+      "id": "FR-9",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 7
+    },
+    {
+      "id": "FR-10",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 6
+    },
+    {
+      "id": "FR-11",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 5
+    }
+  ],
+  "qualityRequirements": [
+    {
+      "id": "NFR-1",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 7
+    },
+    {
+      "id": "NFR-2",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 2
+    },
+    {
+      "id": "NFR-3",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 4
+    },
+    {
+      "id": "NFR-4",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 4
+    },
+    {
+      "id": "NFR-5",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 6
+    },
+    {
+      "id": "NFR-6",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 5
+    },
+    {
+      "id": "NFR-7",
+      "hasAcceptanceSection": true,
+      "criterionBullets": 4
+    }
+  ],
+  "decisions": [
+    {
+      "id": "H1",
+      "state": "Validée (S7)"
+    },
+    {
+      "id": "H2",
+      "state": "Validée (S8)"
+    },
+    {
+      "id": "H3",
+      "state": "Validée (S9)"
+    },
+    {
+      "id": "H4",
+      "state": "Validée (S10)"
+    },
+    {
+      "id": "H5",
+      "state": "Validée (S11)"
+    },
+    {
+      "id": "H6",
+      "state": "Validée (S12)"
+    },
+    {
+      "id": "H7",
+      "state": "Validée (S13)"
+    },
+    {
+      "id": "H8",
+      "state": "Validée avec seuils provisoires (S14)"
+    },
+    {
+      "id": "H9",
+      "state": "Validée avec objectifs provisoires (S15)"
+    },
+    {
+      "id": "H10",
+      "state": "Validée avec objectifs à vérifier (S16)"
+    },
+    {
+      "id": "H11",
+      "state": "Validée avec durées provisoires et décisions avant production (S17)"
+    },
+    {
+      "id": "H12",
+      "state": "Validée (S18)"
+    }
+  ],
+  "brokenReferences": [],
+  "brokenLinks": [],
+  "obsoleteAssumptionMarkers": [],
+  "status": {
+    "document": "pending_approval",
+    "approval": "awaiting_explicit_user_approval",
+    "consolidation": "complete"
+  },
+  "report": {
+    "grade": "Excellent",
+    "dimensions": 7,
+    "openFindings": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "htmlContainsScripts": false
+  },
+  "approvalUpdate": {
+    "recordedAt": "2026-11-18T22:26:17.058Z",
+    "source": "S19",
+    "documentStatus": "final",
+    "validationStatus": "approved",
+    "nextPhase": "awaiting_user_confirmation",
+    "FRandNFRBlocksCompared": 18,
+    "FRandNFRBlocksUnchanged": true,
+    "hashes": {
+      "prd.md": "4ea1a7346f8e5a6769b65e8ab5f94e45e00402c1ea60be300e2d698122ca23fd",
+      "addendum.md": "c9b7fbd317f24042e5ef23c06f62216a229105cf2e5b5c770a57f286605154ea",
+      "source-besoin.md": "acbe82afe52a666b9293242aafd45f1954e6e601611b016748a3abdb3b6b84ac"
+    }
+  }
+}

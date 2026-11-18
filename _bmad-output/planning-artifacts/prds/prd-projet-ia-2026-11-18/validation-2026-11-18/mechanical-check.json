@@ -1,0 +1,93 @@
+{
+  "hashes": {
+    "prd.md": "3c9b378561fb4fa622732e76ee8591020a1d5b2ad1548264e7118d6ec4007ae1",
+    "addendum.md": "6c43cc15f371bda4e3f513123dc37147ddfdd4f15c60ff68d60049a365d05c13",
+    "source-besoin.md": "62e0c6c22026afbb24efb187c143b8d4e041bb9f77c5e6e22eedda1360eefdf1"
+  },
+  "requirements": {
+    "FR": {
+      "ids": [
+        "FR-1",
+        "FR-2",
+        "FR-3",
+        "FR-4",
+        "FR-5",
+        "FR-6",
+        "FR-7",
+        "FR-8",
+        "FR-9",
+        "FR-10",
+        "FR-11"
+      ],
+      "duplicates": []
+    },
+    "NFR": {
+      "ids": [
+        "NFR-1",
+        "NFR-2",
+        "NFR-3",
+        "NFR-4",
+        "NFR-5",
+        "NFR-6",
+        "NFR-7"
+      ],
+      "duplicates": []
+    },
+    "SM": {
+      "ids": [
+        "SM-1",
+        "SM-2",
+        "SM-3",
+        "SM-4",
+        "SM-5",
+        "SM-6"
+      ],
+      "duplicates": []
+    },
+    "UJ": {
+      "ids": [
+        "UJ-1",
+        "UJ-2",
+        "UJ-3"
+      ],
+      "duplicates": []
+    }
+  },
+  "brokenReferences": [],
+  "brokenLinks": [],
+  "assumptions": {
+    "inline": [
+      "H1",
+      "H10",
+      "H11",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9"
+    ],
+    "index": [
+      "H1",
+      "H10",
+      "H11",
+      "H12",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9"
+    ],
+    "matches": true
+  },
+  "docStatus": {
+    "status": "final",
+    "validation": "awaiting_user_validation"
+  }
+}
