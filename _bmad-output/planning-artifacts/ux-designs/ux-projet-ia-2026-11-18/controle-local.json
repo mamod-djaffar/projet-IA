@@ -1,0 +1,345 @@
+{
+  "checkedAt": "2026-11-18T23:17:01.913Z",
+  "scope": "Contrôle local direct des documents et maquettes ; aucune relecture par sous-agents, aucun test de l’application.",
+  "prdSha256": "4ea1a7346f8e5a6769b65e8ab5f94e45e00402c1ea60be300e2d698122ca23fd",
+  "tokenReferences": 40,
+  "components": 18,
+  "contrasts": [
+    {
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 14.32,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "ink-muted",
+      "background": "surface",
+      "ratio": 6.31,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "ink-muted",
+      "background": "background",
+      "ratio": 5.82,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 11.49,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "on-primary",
+      "background": "primary-hover",
+      "ratio": 14.23,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "new-ink",
+      "background": "new-bg",
+      "ratio": 7.81,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "progress-ink",
+      "background": "progress-bg",
+      "ratio": 6.08,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "done-ink",
+      "background": "done-bg",
+      "ratio": 6.59,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "error-ink",
+      "background": "error-bg",
+      "ratio": 6.74,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "input-border",
+      "background": "surface",
+      "ratio": 3.56,
+      "minimum": 3
+    },
+    {
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 5.17,
+      "minimum": 3
+    },
+    {
+      "foreground": "focus-inverse",
+      "background": "primary",
+      "ratio": 11.49,
+      "minimum": 3
+    }
+  ],
+  "html": [
+    {
+      "file": "detail-demande.html",
+      "states": [
+        "complet",
+        "vide",
+        "chargement",
+        "erreur",
+        "conflit",
+        "traitee",
+        "administrateur",
+        "relance",
+        "acces-refuse"
+      ],
+      "offline": true,
+      "scripts": 0,
+      "duplicateIds": []
+    },
+    {
+      "file": "formulaire-public.html",
+      "states": [
+        "complet",
+        "vide",
+        "chargement",
+        "erreur",
+        "confirmation",
+        "email-echec",
+        "incertain"
+      ],
+      "offline": true,
+      "scripts": 0,
+      "duplicateIds": []
+    },
+    {
+      "file": "liste-demandes.html",
+      "states": [
+        "complet",
+        "vide",
+        "sans-resultat",
+        "chargement",
+        "erreur",
+        "acces-refuse"
+      ],
+      "offline": true,
+      "scripts": 0,
+      "duplicateIds": []
+    }
+  ],
+  "browser": [
+    {
+      "file": "detail-demande.html",
+      "width": 1440,
+      "state": "complet",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/detail-demande-1440-complet.png"
+    },
+    {
+      "file": "formulaire-public.html",
+      "width": 1440,
+      "state": "complet",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/formulaire-public-1440-complet.png"
+    },
+    {
+      "file": "liste-demandes.html",
+      "width": 1440,
+      "state": "complet",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 25,
+      "cardsVisible": "none",
+      "capture": ".working/liste-demandes-1440-complet.png"
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 1280,
+      "state": "complet",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null
+    },
+    {
+      "file": "formulaire-public.html",
+      "width": 1280,
+      "state": "complet",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null
+    },
+    {
+      "file": "liste-demandes.html",
+      "width": 1280,
+      "state": "complet",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 25,
+      "cardsVisible": "none"
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 360,
+      "state": "complet",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/detail-demande-360-complet.png"
+    },
+    {
+      "file": "formulaire-public.html",
+      "width": 360,
+      "state": "complet",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/formulaire-public-360-complet.png"
+    },
+    {
+      "file": "liste-demandes.html",
+      "width": 360,
+      "state": "complet",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "complet"
+      ],
+      "rowCount": 25,
+      "cardsVisible": "block",
+      "capture": ".working/liste-demandes-360-complet.png"
+    },
+    {
+      "file": "formulaire-public.html",
+      "width": 1280,
+      "state": "email-echec",
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "visibleStates": [
+        "email-echec"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/formulaire-public-1280-email-echec.png"
+    },
+    {
+      "file": "formulaire-public.html",
+      "width": 360,
+      "state": "erreur",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "erreur"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null
+    },
+    {
+      "file": "liste-demandes.html",
+      "width": 360,
+      "state": "vide",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "vide"
+      ],
+      "rowCount": 25,
+      "cardsVisible": "block"
+    },
+    {
+      "file": "liste-demandes.html",
+      "width": 1280,
+      "state": "sans-resultat",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "visibleStates": [
+        "sans-resultat"
+      ],
+      "rowCount": 25,
+      "cardsVisible": "none"
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 360,
+      "state": "erreur",
+      "clientWidth": 345,
+      "scrollWidth": 345,
+      "visibleStates": [
+        "erreur"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/detail-demande-360-erreur.png"
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 1280,
+      "state": "conflit",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "visibleStates": [
+        "conflit"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 1440,
+      "state": "administrateur",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "visibleStates": [
+        "administrateur"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null,
+      "capture": ".working/detail-demande-1440-administrateur.png"
+    },
+    {
+      "file": "detail-demande.html",
+      "width": 360,
+      "state": "acces-refuse",
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "visibleStates": [
+        "acces-refuse"
+      ],
+      "rowCount": 0,
+      "cardsVisible": null
+    }
+  ],
+  "failures": []
+}
