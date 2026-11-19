@@ -1,7 +1,7 @@
 ---
 name: Nova Services
 description: Identité sobre et lisible pour déposer et traiter les demandes des clients et prospects.
-status: pending_validation
+status: final
 created: 2026-11-18
 updated: 2026-11-19
 sources:
@@ -141,25 +141,37 @@ components:
   support:
     foreground: '{colors.ink-muted}'
     font: '{typography.meta.fontSize}'
+  account-list:
+    background: '{colors.surface}'
+    divider: '{colors.border}'
+  category-list:
+    background: '{colors.surface}'
+    divider: '{colors.border}'
+  action-menu:
+    foreground: '{colors.primary}'
+    focus: '{colors.focus}'
+  confirmation-panel:
+    background: '{colors.surface}'
+    radius: '{rounded.lg}'
 ---
 
 # Nova Services — DESIGN
 
-Document proposé à validation. Il décrit **l'apparence**. [EXPERIENCE.md](EXPERIENCE.md) décrit les comportements. Le PRD approuvé reste la référence métier ; les deux documents UX priment sur les maquettes en cas d'écart de représentation.
+Document UX validé le 19 novembre 2026. Il décrit l’apparence. [EXPERIENCE.md](EXPERIENCE.md) décrit les comportements. Le PRD approuvé reste la référence métier ; les deux documents UX priment sur les maquettes en cas d'écart de représentation.
 
-Origines : **[PRD]** = exigence héritée ; **[CHOIX ACCEPTÉ]** = réponse par défaut acceptée dans l'unique tour UX ; **[HYPOTHÈSE UX A-n]** = détail proposé, distinct des décisions déjà approuvées du PRD. Registre commun en fin d'EXPERIENCE.md. Un « token » est simplement un nom stable donné à une valeur, par exemple `{colors.primary}` pour le bleu principal.
+**[PRD]** identifie une exigence métier et **[CHOIX ACCEPTÉ]** une orientation UX initiale. Les références A-n renvoient au [registre des décisions UX](EXPERIENCE.md#registre-des-décisions-ux). Un « token » est simplement un nom stable donné à une valeur, par exemple `{colors.primary}` pour le bleu principal.
 
 ## Brand & Style
 
 **[CHOIX ACCEPTÉ]** Identité professionnelle sobre, bleu marine, fond clair et gris neutres. « Nova Services » reste une signature textuelle : aucun logo officiel n'est inventé. Le produit aide à accomplir une tâche, sans promesse de résolution instantanée, slogan commercial ou décoration envahissante.
 
-**[HYPOTHÈSE UX A-1]** Mode clair uniquement pour cette proposition, sans sélecteur de thème. Une petite mention « Espace clients et prospects » ou « Espace collaborateurs » distingue les deux contextes. Les maquettes comportent une barre de consultation séparée du produit : données fictives, liens vers les autres écrans et variantes d'état. Cette barre ne fait pas partie de l'application future.
+**[A-1]** Mode clair, sans sélecteur de thème. Une petite mention « Espace clients et prospects » ou « Espace collaborateurs » distingue les deux contextes. Les maquettes comportent une barre de consultation séparée du produit : données fictives, liens vers les autres écrans et variantes d'état. Cette barre ne fait pas partie de l'application future.
 
-Références visuelles : [formulaire public](mockups/formulaire-public.html), [liste interne](mockups/liste-demandes.html), [détail et traitement](mockups/detail-demande.html). Les variantes se choisissent par les liens d'état en haut de chaque fichier ; elles sont des instantanés, pas des opérations réelles.
+Les cinq maquettes présentent des états consultables depuis la barre supérieure. La liste inclut des variantes de connexion et de récupération. Les vues d’administration reprennent la charte des demandes. [Formulaire public](mockups/formulaire-public.html) · [Liste interne](mockups/liste-demandes.html) · [Détail et traitement](mockups/detail-demande.html) · [Utilisateurs](mockups/utilisateurs.html) · [Paramètres](mockups/parametres.html)
 
 ## Colors
 
-**[HYPOTHÈSE UX A-1]** Les valeurs exactes complètent la direction acceptée.
+**[A-1]** Les valeurs exactes complètent la direction acceptée.
 
 | Rôle | Tokens | Usage |
 |---|---|---|
@@ -174,11 +186,11 @@ Références visuelles : [formulaire public](mockups/formulaire-public.html), [l
 | Erreur | `{colors.error-ink}` sur `{colors.error-bg}` | Erreur expliquée, jamais uniquement un contour rouge |
 | Désactivé | `{colors.disabled-ink}` sur `{colors.disabled-bg}` | Action momentanément indisponible, avec raison si nécessaire |
 
-**[PRD NFR-2]** Le statut ne dépend pas seulement d'une couleur. **[HYPOTHÈSE UX A-2]** Viser au minimum 4,5:1 pour le texte courant et 3:1 pour les contours des contrôles et le repère de focus. Vérifier les couples réellement utilisés ; un séparateur décoratif peut rester discret, mais ne remplace pas un contour de champ. Les mesures locales de la palette seront conservées dans `controle-local.json` ; elles ne constituent pas une certification d'accessibilité de l'application.
+**[PRD NFR-2]** Le statut ne dépend pas seulement d'une couleur. **[A-2]** Viser au minimum 4,5:1 pour le texte courant et 3:1 pour les contours des contrôles et le repère de focus. Vérifier les couples réellement utilisés ; un séparateur décoratif peut rester discret, mais ne remplace pas un contour de champ. Les mesures locales de la palette seront conservées dans `controle-local.json` ; elles ne constituent pas une certification d'accessibilité de l'application.
 
 ## Typography
 
-**[HYPOTHÈSE UX A-1]** Utiliser une police système sans téléchargement : Segoe UI sur Windows, puis `system-ui` et les polices de secours définies dans les tokens. Aucun service de polices ni dépendance graphique n'est imposé.
+**[A-1]** Utiliser une police système sans téléchargement : Segoe UI sur Windows, puis `system-ui` et les polices de secours définies dans les tokens. Aucun service de polices ni dépendance graphique n'est imposé.
 
 | Rôle | Référence | Règle |
 |---|---|---|
@@ -194,17 +206,17 @@ L'objet peut revenir à la ligne. Les descriptions et commentaires gardent leurs
 
 **[CHOIX ACCEPTÉ]** Formulaire et détail aérés ; liste plus compacte. Tableau sur ordinateur et fiches empilées sur téléphone, sans modifier les 25 éléments d'une page.
 
-**[HYPOTHÈSE UX A-3]** Grille par pas de 4 px. Marges téléphone `{spacing.margin-mobile}`, espaces entre panneaux `{spacing.gutter}`. Le formulaire occupe au maximum 760 px de contenu centré. L'espace interne conserve un menu de 224 px puis un contenu souple, plafonné à 1 440 px. Le détail place lecture/historique à gauche et traitement à droite ; l'ordre mobile devient résumé, contenu, traitement, historique.
+**[A-3]** Grille par pas de 4 px. Marges téléphone `{spacing.margin-mobile}`, espaces entre panneaux `{spacing.gutter}`. Le formulaire occupe au maximum 760 px de contenu centré. L'espace interne conserve un menu de 224 px puis un contenu souple, plafonné à 1 440 px. Le détail place lecture/historique à gauche et traitement à droite ; l'ordre mobile devient résumé, contenu, traitement, historique.
 
 À partir de 1 024 px : menu latéral et détail en deux colonnes. De 768 à 1 023 px : menu compact en haut et détail en une colonne. Sous 768 px : une colonne et liste en fiches. Les filtres se replient en lignes, sans imposer un défilement horizontal. Le menu mobile est dans le flux et non un panneau qui masque l'écran. Chaque page garde son propre défilement ; pas de barre d'action flottante recouvrant les champs.
 
 ## Elevation & Depth
 
-**[HYPOTHÈSE UX A-1]** Panneaux délimités par un trait, avec ombre discrète `0 6px 24px rgba(27,43,64,.04)`. Les champs restent plats. La seule superposition envisagée est une confirmation d'action d'administration sensible ; elle ne crée pas un nouvel écran métier. Ni verre transparent, ni dégradé décoratif, ni ombre sur chaque ligne de liste.
+**[A-1]** Panneaux délimités par un trait, avec ombre discrète `0 6px 24px rgba(27,43,64,.04)`. Les champs restent plats. Les confirmations d’administration utilisent les panneaux dédiés décrits en A-11. Ni verre transparent, ni dégradé décoratif, ni ombre sur chaque ligne de liste.
 
 ## Shapes
 
-Champs et boutons : `{rounded.md}` ; panneaux : `{rounded.lg}` ; petits repères : `{rounded.sm}` ; badges : `{rounded.full}`. Les cibles interactives mesurent au moins 44 px de haut **[HYPOTHÈSE UX A-2]**. Les coins arrondis ne servent jamais à distinguer seuls un état. Pas de boutons exclusivement constitués d'une icône pour les actions importantes.
+Champs et boutons : `{rounded.md}` ; panneaux : `{rounded.lg}` ; petits repères : `{rounded.sm}` ; badges : `{rounded.full}`. Les cibles interactives mesurent au moins 44 px de haut **[A-2]**. Les coins arrondis ne servent jamais à distinguer seuls un état. Pas de boutons exclusivement constitués d'une icône pour les actions importantes.
 
 ## Components
 
@@ -230,11 +242,15 @@ Les noms ci-dessous sont identiques dans EXPERIENCE.md. Les valeurs viennent du 
 | `skeleton` | Blocs gris statiques reprenant la structure ; pas de clignotement ni de mouvement obligatoire |
 | `dialog` | Fenêtre de confirmation sobre, action et conséquence nommées ; bouton de retour visible ; hauteur et défilement compatibles avec téléphone |
 | `support` | Pied de page discret mais lisible, contact identique sur toutes les surfaces requises ; mention de confidentialité séparée du bouton d'envoi |
+| `account-list` | Tableau sur ordinateur et fiches sur téléphone. Identité, rôle et état gardent le même ordre. Les libellés d’état restent lisibles sans couleur. |
+| `category-list` | Nom et état en tableau ou fiches. Le libellé « Désactivée » et la note de rattachement restent visibles près du nom. |
+| `action-menu` | Actions dans l’ordre du menu, avec une cible visible au clavier et un libellé identifiable par compte. Les restrictions affichent une explication. |
+| `confirmation-panel` | **[A-11]** Panneau dédié sur fond clair. Le nom du compte ou de la catégorie précède les conséquences et les boutons. Les boutons se disposent sur une colonne sur téléphone. |
 
 ## Do's and Don'ts
 
 - **Faire :** garder le texte, le statut, la référence et les erreurs compréhensibles ; préserver la saisie ; utiliser les mêmes composants publics et internes ; afficher une seule action principale par bloc.
-- **Faire :** comparer les [états du formulaire](mockups/formulaire-public.html#erreur), la [liste vide](mockups/liste-demandes.html#vide) et le [traitement refusé](mockups/detail-demande.html#erreur) avant validation.
+- **Faire :** comparer les [états du formulaire](mockups/formulaire-public.html#erreur), la [liste vide](mockups/liste-demandes.html#vide) et le [traitement refusé](mockups/detail-demande.html#erreur) lors de la recette UX.
 - **Éviter :** notifications de réussite qui disparaissent avec la référence, confusion « Traitée »/« email envoyé », texte clair sur fond clair, barre latérale débordante sur mobile, champ uniquement expliqué par son placeholder.
 - **Éviter :** priorités, affectations, pièces jointes, graphiques, avatars clients, consentement précoché ou nouvelle case obligatoire de consentement : ces fonctions ou choix juridiques ne sont pas ajoutés au PRD.
-- **Avant validation :** les valeurs exactes et hypothèses UX peuvent être corrigées sans changer les exigences métier. Aucun choix de framework, prestataire, architecture ou application n'est engagé par ces documents.
+- **Pour la réalisation :** appliquer les conventions validées du registre et vérifier la compatibilité de tout ajustement avec le PRD.
